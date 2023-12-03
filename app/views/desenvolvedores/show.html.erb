@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @desenvolvedore %>
+
+<div>
+  <%= link_to "Edit this desenvolvedore", edit_desenvolvedore_path(@desenvolvedore) %> |
+  <%= link_to "Back to desenvolvedores", desenvolvedores_path %>
+
+  <%= button_to "Destroy this desenvolvedore", @desenvolvedore, method: :delete %>
+</div>

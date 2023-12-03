@@ -1,0 +1,52 @@
+<%= form_with(model: desenvolvedore) do |form| %>
+  <% if desenvolvedore.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(desenvolvedore.errors.count, "error") %> prohibited this desenvolvedore from being saved:</h2>
+
+      <ul>
+        <% desenvolvedore.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :cpf, style: "display: block" %>
+    <%= form.text_field :cpf %>
+  </div>
+
+  <div>
+    <%= form.label :nome, style: "display: block" %>
+    <%= form.text_field :nome %>
+  </div>
+
+  <div>
+    <%= form.label :funcao, style: "display: block" %>
+    <%= form.text_field :funcao %>
+  </div>
+
+  <div>
+    <%= form.label :telefone, style: "display: block" %>
+    <%= form.text_field :telefone %>
+  </div>
+
+  <div>
+    <%= form.label :salario, style: "display: block" %>
+    <%= form.text_field :salario %>
+  </div>
+
+  <div>
+    <%= form.label :endereco, style: "display: block" %>
+    <%= form.text_field :endereco %>
+  </div>
+
+  <div>
+    <%= form.label :Produto_id, style: "display: block" %>
+    <%= form.text_field :Produto_id %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
