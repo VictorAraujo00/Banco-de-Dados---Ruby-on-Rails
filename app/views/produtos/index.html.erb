@@ -6,9 +6,9 @@
   <% @produtos.each do |produto| %>
     <%= render produto %>
     <p>
-      <%= link_to "Show this produto", produto %>
+      <%= link_to "Mostrar este produto", produto %>
     </p>
   <% end %>
 </div>
 
-<%= link_to "New produto", new_produto_path %>
+<%= link_to "Novo produto", new_produto_path %>
